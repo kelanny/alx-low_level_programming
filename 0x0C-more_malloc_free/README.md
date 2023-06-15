@@ -2,3 +2,8 @@
 
 Task: 0. Trust no one
 > Write a function that allocates memory using malloc
+
+Task: 1. string_nconcat
+> Write a function that concatenates two strings.
+
+
