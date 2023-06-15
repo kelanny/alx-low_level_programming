@@ -9,4 +9,5 @@ Task: 1. string_nconcat
 Task: 2. _callo
 > cWrite a function that allocates memory for an array, using calloc
 
-Task: 
+Task: 3. array_range
+> Write a function that creates an array of integers. 
