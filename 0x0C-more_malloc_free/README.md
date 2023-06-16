@@ -11,3 +11,5 @@ Task: 2. _callo
 
 Task: 3. array_range
 > Write a function that creates an array of integers. 
+Task: 4. _realloc
+> Write a function that reallocates a memory block using malloc and free
