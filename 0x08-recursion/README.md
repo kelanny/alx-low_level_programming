@@ -7,3 +7,8 @@ Task: 1. Why is it so important to dream? Because, in my dreams we are together
 
 Task: 2. Dreams feel real while we're in them. It's only when we wake up that we realize something was actually strange
 > Write a function that returns the length of a string.
+
+Task: 3. You mustn't be afraid to dream a little bigger, darling
+> Write a function that returns the factorial of a given number.
+
+
