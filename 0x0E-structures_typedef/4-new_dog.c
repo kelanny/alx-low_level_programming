@@ -18,14 +18,14 @@ int _strlen(char *s)
 }
 
 /**
- * _strcpy - The function returns a copy of a string src
+ * *_strcpy - The function returns a copy of a string src
  * @src: The source input string to copy
  * @dest: the destination to copy string src
  *
  * Return: new copied string dest
  */
 
-char _strcpy(char *src, char *dest)
+char *_strcpy(char *src, char *dest)
 {
 	int i;
 	int len = 0;

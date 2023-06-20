@@ -14,3 +14,7 @@ Task: 3. Outside of a dog, a book is a man's best friend. Inside of a dog it's t
 
 Task: 4. A door is what a dog is perpetually on the wrong side of
 > Write a function that creates a new dog.Write a function that creates a new dog.
+
+Task: 5. How many legs does a dog have if you call his tail a leg? Four. Saying that a tail is a leg doesn't make it a leg
+> Write a function that frees dogs.
+
