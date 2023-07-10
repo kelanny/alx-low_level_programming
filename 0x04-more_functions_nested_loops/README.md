@@ -16,5 +16,7 @@ Returns 1 if c is a digit
 Returns 0 otherwise
 FYI: The standard library provides a similar function: isdigit. Run man isdigit to learn more.
 
-TASK: 
+TASK: 2. Collaboration is multiplication
+Write a function that multiplies two integers.
+Prototype: int mul(int a, int b);
 
