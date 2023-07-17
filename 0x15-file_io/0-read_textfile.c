@@ -23,12 +23,14 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	fp = open("Requirescat", O_RDONLY);
 
 	if (fp == -1)
+	{
 		return (0);
-
+		close(fp);
+	}
        	buffer = malloc(letters * sizeof(char));
 	length = read(fp, buffer, letters);
 	write(1, buffer, letters);
 	free(buffer);
-
+	close(fp);
 	return (length);
 }
