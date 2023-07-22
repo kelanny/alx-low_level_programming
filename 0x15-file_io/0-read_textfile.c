@@ -1,7 +1,4 @@
-#include <stdio.h>
 #include <stdlib.h>
-#include <unistd.h>
-#include <fcntl.h>
 #include "main.h"
 
 /**
@@ -16,21 +13,26 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
 	char *buffer;
 	int fp;
-	ssize_t length = 0;
+	ssize_t readbytes, writebytes;
 
 	if (filename == NULL)
 		return (0);
-	fp = open("Requirescat", O_RDONLY);
+	fp = open(filename, O_RDONLY);
 
 	if (fp == -1)
 	{
 		return (0);
-		close(fp);
 	}
        	buffer = malloc(letters * sizeof(char));
-	length = read(fp, buffer, letters);
-	write(1, buffer, letters);
+	readbytes = read(fp, buffer, letters);
+	writebytes = write(STDOUT_FILENO, buffer, readbytes);
+	if (writebytes == -1 || readbytes != writebytes)
+	{
+		close(fp);
+		free(buffer);
+		return (0);
+	}
 	free(buffer);
 	close(fp);
-	return (length);
+	return (readbytes);
 }
