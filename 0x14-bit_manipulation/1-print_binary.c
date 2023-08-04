@@ -27,5 +27,4 @@ void print_binary(unsigned long int n)
 	}
 	if (!bit_size)
 		_putchar('0');
-	_putchar('\n');
 }
