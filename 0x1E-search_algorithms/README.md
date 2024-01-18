@@ -65,3 +65,11 @@ You can assume that array will be sorted in ascending order
 You can assume that value won’t appear more than once in array
 If value is not present in array or if array is NULL, your function must return -1
 You must print the array being searched every time it changes. (e.g. at the beginning and when you search a subarray) (See example)
+
+TASK: 2. Big O #0
+mandatory
+What is the time complexity (worst case) of a linear search in an array of size n?
+
+TASK: 3. Big O #1
+mandatory
+What is the space complexity (worst case) of an iterative linear search algorithm in an array of size n?
