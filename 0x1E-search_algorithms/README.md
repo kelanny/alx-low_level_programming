@@ -122,3 +122,49 @@ Every time you compare a value in the array to the value you are searching for, 
 TASK: 8. Big O #5
 #advanced
 What is the time complexity (average case) of a jump search in an array of size n, using step = sqrt(n)?
+
+TASK: 9. Interpolation search
+#advanced
+Write a function that searches for a value in a sorted array of integers using the Interpolation search algorithm
+
+Prototype : int interpolation_search(int *array, size_t size, int value);
+Where array is a pointer to the first element of the array to search in
+size is the number of elements in array
+And value is the value to search for
+Your function must return the first index where value is located
+You can assume that array will be sorted in ascending order
+If value is not present in array or if array is NULL, your function must return -1
+To determine the probe position, you can use : size_t pos = low + (((double)(high - low) / (array[high] - array[low])) * (value - array[low]))
+Every time you compare a value in the array to the value you are searching, you have to print this value (see example below
+
+TASK: 10. Exponential search
+#advanced
+Write a function that searches for a value in a sorted array of integers using the Exponential search algorithm
+
+Prototype : int exponential_search(int *array, size_t size, int value);
+Where array is a pointer to the first element of the array to search in
+size is the number of elements in array
+And value is the value to search for
+Your function must return the first index where value is located
+You can assume that array will be sorted in ascending order
+If value is not present in array or if array is NULL, your function must return -1
+You have to use powers of 2 as exponential ranges to search in your array
+Every time you compare a value in the array to the value you are searching for, you have to print this value (See example)
+Once you’ve found the good range, you need to use a binary search:
+Every time you split the array, you have to print the new array (or subarray) you’re searching in (See example)
+
+11. Advanced binary search
+#advanced
+You may have noticed that the basic binary search does not necessarily return the index of the first value in the array (if this value appears more than once in the array). In this exercise, you’ll have to solve this problem.
+
+Write a function that searches for a value in a sorted array of integers.
+
+Prototype : int advanced_binary(int *array, size_t size, int value);
+Where array is a pointer to the first element of the array to search in
+size is the number of elements in array
+And value is the value to search for
+Your function must return the index where value is located
+You can assume that array will be sorted in ascending order
+If value is not present in array or if array is NULL, your function must return -1
+Every time you split the array, you have to print the new array (or subarray) you’re searching in (See example)
+You have to use recursion. You may only use one loop (while, for, do while, etc.) in order to print the array
