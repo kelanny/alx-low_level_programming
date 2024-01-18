@@ -73,3 +73,11 @@ What is the time complexity (worst case) of a linear search in an array of size 
 TASK: 3. Big O #1
 mandatory
 What is the space complexity (worst case) of an iterative linear search algorithm in an array of size n?
+
+TASK: 4. Big O #2
+mandatory
+What is the time complexity (worst case) of a binary search in an array of size n?
+
+TASK: 5. Big O #3
+mandatory
+What is the space complexity (worst case) of a binary search in an array of size n?
