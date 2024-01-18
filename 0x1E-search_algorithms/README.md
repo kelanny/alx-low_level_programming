@@ -81,3 +81,44 @@ What is the time complexity (worst case) of a binary search in an array of size 
 TASK: 5. Big O #3
 mandatory
 What is the space complexity (worst case) of a binary search in an array of size n?
+
+TASK: #include <stdio.h>
+#include <stdlib.h>
+#include "search_algos.h"
+
+/**
+ * main - Entry point
+ *
+ * Return: Always EXIT_SUCCESS
+ */
+int main(void)
+{
+    int array[] = {
+        0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+    };
+    size_t size = sizeof(array) / sizeof(array[0]);
+
+    printf("Found %d at index: %d\n\n", 6, jump_search(array, size, 6));
+    printf("Found %d at index: %d\n\n", 1, jump_search(array, size, 1));
+    printf("Found %d at index: %d\n", 999, jump_search(array, size, 999));
+    return (EXIT_SUCCESS);
+}
+
+TASK: 7. Jump search
+#advanced
+Write a function that searches for a value in a sorted array of integers using the Jump search algorithm
+
+Prototype : int jump_search(int *array, size_t size, int value);
+Where array is a pointer to the first element of the array to search in
+size is the number of elements in array
+And value is the value to search for
+Your function must return the first index where value is located
+You can assume that array will be sorted in ascending order
+If value is not present in array or if array is NULL, your function must return -1
+You have to use the square root of the size of the array as the jump step.
+You can use the sqrt() function included in <math.h> (don’t forget to compile with -lm)
+Every time you compare a value in the array to the value you are searching for, you have to print this value (see example)
+
+TASK: 8. Big O #5
+#advanced
+What is the time complexity (average case) of a jump search in an array of size n, using step = sqrt(n)?
